@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.underlinehovereffect{
+    width: 1000px;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 100px auto;
+    display: flex;
+    color: darkblue;
+    justify-content: center;
+}
+
+.allbuttons{
+    width: 1000px;
+    font-size: 25px;
+    font-weight: 500;
+    margin: auto;
+    display: flex;
+    color: darkblue;
+    justify-content: center;
+    gap: 25px;
+}
+
+.allbuttons li{
+    list-style: none;
+    position: relative;
+}
+
+.allbuttons li a::after{
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: 500ms;
+}
+
+.allbuttons li a:hover{
+    color: red;
+}
+
+.allbuttons li a:hover::after{
+    width: 100%;
+    left: 0;
+}
